@@ -472,6 +472,7 @@ i{
 .srect, .sdet{
     width: 50%;
     height: 70%;
+    max-height: 400px;
 }
 
 .sdet{
@@ -1067,5 +1068,94 @@ i{
     
     @media screen and (max-width: 479px) {
     /* start of phone styles */
-    
+        .hero-text{
+            /* height: 200px; */
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+        }
+
+        .hero-text p{
+            font-size: 12px;
+        }
+        .hero-text h1{
+            font-size: 20px;
+        }
+
+        .hero{
+            margin: 0 auto;
+            height: 70vh;
+            width: 95%;
+        }
+
+        h1{
+            font-size: 25px;
+        }
+
+        .hamburger{
+            height: 30px;
+            width: 30px;
+        }
+
+        .extra{
+            margin-top: 40px;
+            height: max-content;
+        }
+        
+        .excont{
+            flex-direction: column;
+            height: max-content;
+        }
+
+        .excont:nth-child(2){
+            flex-direction: column-reverse;
+        }
+
+        .rect,.text{
+            width: 80%;
+            /* border: 2px solid black; */
+        }
+
+        .text{
+            height: fit-content;
+        }
+
+        .sfoot{
+            height: max-content;
+            align-items: left;
+        }
+
+        .sfoot > div{
+            height: max-content;
+            gap: 40px;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: left;
+        }
+
+        .sfoot > div div{
+            width: 100%;
+        }
+
+        .sfoot > div > div:nth-child(1):after,
+        .sfoot > div > div:nth-child(2):after,
+        .sfoot > div > div:nth-child(3):after,
+        .sfoot > div > div:nth-child(4):after{
+            top: 10px;
+            transform: none;
+            right: 0;
+            height: fit-content;
+        }
+
+        .srect{
+            height: 200px;
+            width: 200px;
+        }
+
+        .srect::after{
+            height: 120px;
+            width: 120px;
+        }
     }
