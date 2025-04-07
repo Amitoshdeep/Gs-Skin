@@ -1,0 +1,970 @@
+/* import fonts from assets */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Gunplay';
+    src: url('./Assets/Fonts/gunplay 3d.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Handwriting';
+    src: url('./Assets/Fonts/Handwriting.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'loveyou';
+    src: url("/Assets/Fonts/loveyou.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'plante';
+    src: url("/Assets/Fonts/plante.ttf") format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Morningbright';
+    src: url('Assets/Fonts/Morning\ Bright.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Cloister';
+    src: url('Assets/Fonts/CloisterBlack.ttf') format('truetype');
+    font-weight: bold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'poppins', sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.wrap{
+    scroll-behavior: smooth;
+}
+
+.wrap{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    cursor: default;
+}
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+.center li{
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: 20px; */
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.center a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.getApt{
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #000;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.getApt:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* HERO  =======================================================*/
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+
+.hero{
+    margin: 0px 40px;
+    height: calc(100% - 120px);
+    width: calc(100% - 80px);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.manjushasparsh.com/sites/default/files/2023-04/Laser%20Treatments%20for%20Skin%20Conditions.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero-text{
+    height: 290px;
+    width: 500px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.hero-text p{
+    font-size: 14px;
+}
+
+.explore{
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #000;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.explore:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* EXTRAS =================================================*/
+.extra{
+    margin-top: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    
+}
+
+.excont{
+    align-items: center;
+    /* border: 2px solid black; */
+    height: calc(50% - 40px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.rect,.text{
+    height: 365px;
+    border-radius: 30px;
+    width: 360px;
+    /* border: 2px solid black; */
+}
+
+.rect{
+    height: calc(100% - 60px);
+    width: 360px;
+    position: relative;
+}
+
+.rect:nth-child(1),.rect:nth-child(2){
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+
+.rect:nth-child(1){
+    background-image: url("https://images.onlymyhealth.com/imported/images/2022/May/03_May_2022/big_diyfacemasks.jpg");
+}
+
+.rect:nth-child(2){
+    background-image: url("https://images.onlymyhealth.com/imported/images/2024/May/06_May_2024/Main-massage.jpg");
+}
+
+.pop{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop:nth-child(1){
+    top: -30px;
+    right: -30px;   
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.rect:nth-child(2) .pop{
+    top: -30px;
+    left: -30px;   
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pop p:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pop p:nth-child(2){
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.text{
+    width: 25%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    letter-spacing: 1px;
+    flex-direction: column;
+    font-size: 38px;
+
+}
+
+.text p:nth-child(2){
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+i{
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+/* Proficient ======================================================== */
+
+.services, .sustaina{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 60%;
+    background-color: rgba(243, 224, 190, 0.3);
+}
+
+.sustaina{
+    padding: 40px 0px;
+}
+
+.serCon{
+    width: 70%;
+    padding-bottom: 20px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left,.right{
+    /* border: 2px solid black; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left{
+    padding: 20px;
+}
+
+.ltop{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(223, 154, 27);
+    /* opacity: 0.6; */
+}
+
+.left p:nth-child(2){
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.left p:nth-child(3){
+    font-size: 16px;
+    opacity: 0.6;
+    letter-spacing: 1px;
+}
+
+.left ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.left ul li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: calc(50% - 20px);
+    font-weight: 600;
+    line-height: 1; /* Reduce line spacing to bring text to the top */
+}
+
+.fi.fi-ss-check-circle{
+    color: black;
+    opacity: 1;
+}
+
+.right .rrect{
+    display: inline-block; /* Allows proper column wrapping */
+    width: 100%;
+    max-width: 250px;
+    /* border: 2px solid black; */
+    height: 100%;
+    justify-self: end; /* Centers each grid item horizontally */
+    align-self: center; /* Centers each grid item vertically */
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.right .rrect:nth-child(1){
+    grid-row: 1 / span 2;
+    background-image: url("https://saatwika.in/wp-content/uploads/2023/02/Ayurvedic-Head-Massage-Or-Shiro-Abhyanga.jpg");  
+}
+
+.right .rrect:nth-child(2){
+    grid-row: 3 / span 2;
+    background-image: url("https://images.onlymyhealth.com/imported/images/2024/May/06_May_2024/Main-massage.jpg");
+}
+
+.right .rrect:nth-child(3){
+    grid-row: 2 / span 2;
+    justify-self: start;
+    align-self: start;
+    background-image: url("https://evaskinclinicpune.com/wp-content/uploads/2022/11/Laser-Skin-Treatment-1-768x512.jpg");
+
+}
+
+#leaf , .fi.fi-ss-leaf{
+    position: absolute;
+    bottom: 30px;
+    left: 70%;
+    height: 70px;
+    opacity: 1;
+}
+
+.fi.fi-ss-leaf{
+    transform: rotate(280deg);
+    bottom: 60px;
+    left: 480px;
+    opacity: 0.5;
+}
+
+
+/* Sustainable ====================================================== */
+.sustain h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.sustain{
+    /* padding: 20px; */
+    /* border: 2px solid black; */
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scont{
+    padding: 0px 20px;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+    align-items: center;
+}
+
+.srect, .sdet{
+    width: 50%;
+    height: 70%;
+}
+
+.sdet{
+    /* background-color: wheat; */
+    padding: 20px;
+}
+
+.srect{
+    position: relative;
+    width: 40%;
+    max-width: 300px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+    border-radius: 25px;
+    background-image: url("https://img.freepik.com/free-photo/care-products-plants-arrangement_23-2149879994.jpg?t=st=1743820263~exp=1743823863~hmac=9b175d5b0bb557d3ba3967b1a41795854fdd2d3bf28d157be322b5f9285940e2&w=996");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.srect::after{
+    content: '';
+    position: absolute;
+    right: -50px;
+    bottom: -20px;
+    height: 200px;
+    width: 180px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    background-image: url("https://img.freepik.com/premium-photo/close-up-calm-woman-having-her-eyes-closed-while-being-beauty-salon-having-procedure-laser-hair-removal-her-face_376548-2342.jpg?w=740");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sdet i{
+    opacity: 1;
+    
+}
+
+.sdet li{
+    font-weight: bold;
+    display: flex;
+    gap: 5px;
+    align-items: flex-start; /* Align items to the top */
+    line-height: 1;
+     /* Reduce line spacing to bring text to the top */
+    position: relative;
+}
+
+.sdet ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.sdet li:nth-child(1)::after, 
+.sdet li:nth-child(2)::after,
+.sdet li:nth-child(3)::after,
+.sdet li:nth-child(4)::after{
+    position: absolute;
+    width: 80%;
+    opacity: 0.5;
+    line-height: 1;
+    left: 20px;
+    bottom: -35px;
+}
+
+.sdet li:nth-child(1)::after{
+    content: "Eco-friendly , sustainable packaging solutions.";
+    
+}
+
+.sdet li:nth-child(2)::after{
+    content: "Enhanced effectiveness for better results.";
+    bottom: -20px;
+}
+
+.sdet li:nth-child(3)::after{
+    content: "Plant-based , cruelty-free skincare solutions.";
+}
+
+.sdet li:nth-child(4)::after{
+    content: "No animal testing, ethically made.";
+    bottom: -20px;
+}
+
+/* sfoot ========================================================== */
+.sfoot{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(243, 224, 190, 0.3);
+    padding: 40px;
+}
+
+.sfoot > div{
+    margin: 0px 0px 40px 0px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sfoot > div p{
+    font-size: 45px;
+    font-weight: 600;
+    color: #000;
+}
+
+.sfoot > div  div{
+    position: relative;
+}
+
+.sfoot > div > div:nth-child(1):after,
+.sfoot > div > div:nth-child(2):after,
+.sfoot > div > div:nth-child(3):after,
+.sfoot > div > div:nth-child(4):after
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -24px;
+    width: max-content;
+    opacity: 0.5;
+    font-weight: 550;
+}
+
+.sfoot > div > div:nth-child(1):after{
+    content: 'Years of Experience';
+}
+
+.sfoot > div > div:nth-child(2):after{
+    content: 'Spa Facilities';
+}
+
+.sfoot > div > div:nth-child(3):after{
+    content: 'Happy Customers';
+}
+
+.sfoot > div > div:nth-child(4):after{
+    content: 'Wellness Products';
+}
+
+/* Social ========================================= */
+
+.social{
+    height: 500px;
+    margin: 40px auto;
+    width: 60%;
+    border-radius: 20px;
+    background-color: rgba(243, 224, 190, 0.3);
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    font-family: Morningbright;
+}
+
+.social i{
+    opacity: 1;
+    font-size: 30px;
+    color: rgb(255, 207, 119) ;
+}
+
+.soleft, .soright{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 20px;
+}
+
+.soright > div {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    /* justify-content: center; */
+    /* line-height: 1; */
+}
+
+.soright > p {
+    font-size: 40px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.soright > div p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.soright{
+    padding: 20px;
+}
+
+.soleft{
+    padding-left: 80px;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: -10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+
+.cardz:nth-child(1){
+    background-image: url("https://img.freepik.com/free-photo/creative-portrait-young-adult_23-2149202896.jpg?ga=GA1.1.853389089.1741745626&semt=ais_hybrid&w=740");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.cardz:nth-child(2){
+    grid-column: 1;
+    grid-row: 2 / span 3;
+
+    background-image: url("https://img.freepik.com/free-photo/young-woman-lying-cosmetologist-s-table-rejuvenation-procedure-cosmetologist-take-care-about-neck-face-skin-youthfull-wellness-hardware-face-cleaning-procedure_343596-7874.jpg?ga=GA1.1.853389089.1741745626&semt=ais_hybrid&w=740");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.cardz:nth-child(3){
+    grid-column: 1;
+    grid-row: 5;
+
+    background-image: url("https://img.freepik.com/free-photo/young-woman-taking-care-herself-home_23-2148976897.jpg?t=st=1744020829~exp=1744024429~hmac=30082bb4dde1cead820a89f2d337442e96a74a40e811bff8ce6411586cbd5ccc&w=740");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.cardz:nth-child(4){
+    grid-row: 1/ span 2;
+
+    background-image: url("https://cdn2.stylecraze.com/wp-content/uploads/2012/07/Simple-Homemade-Face-Masks.jpg.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.cardz:nth-child(5){
+    grid-row: 3 / span 3;
+
+    background-image: url("https://allurethaispa.in/wp-content/uploads/2023/07/closeup-man-having-back-massage-during-spa-treatment-wellness-center-1-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+/* Foooooooter ============================================= */
+
+.footer{
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    background-color: rgba(243, 224, 190, 0.3);
+}
+
+.footer i {
+    font-size: 30px;
+    z-index: 3;
+}
+
+.footer i:hover{
+    color: #000;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.footer span{
+    position: relative;
+    z-index: 3;
+}
+
+.footer div{
+    position: relative;
+}
+
+.footer div::after{
+    content: '';
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    height: 0px;
+    top: 12px;
+    left: 12px;
+    z-index: 1;
+}
+
+.footer div:hover::after{
+    opacity: 0.5;
+    height: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 2px solid black;
+    top: -12px;
+    left: -12px;
+    z-index: 1;
+}
+
+
+/* ResponsivenEssssss */
+.off-screen-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(30px);
+    /* border-radius: 0px 0px 25px 25px; */
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    justify-content: flex-start;
+    padding-top: 100px;
+    align-items: center;
+    right: -767px;
+}
+
+.off-screen-menu.active{
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.off-screen-menu li{
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: 20px; */
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+.off-screen-menu a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}  
+
+.hamburger{
+    display: none;
+    height: 50px;
+    width: 50px;
+    /* margin-left: auto; */
+    position: relative;
+    cursor: pointer;
+}
+
+.hamburger .line{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+}
+
+.line:nth-child(1){
+    top: 25%;
+}
+
+.line:nth-child(3){
+    top: 75%;
+}
+
+.hamburger.active .line:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.hamburger.active .line:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .line:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+/* start of desktop styles */
+@media screen and (max-width: 1815px) {
+    .sdet li:nth-child(1)::after, 
+    .sdet li:nth-child(2)::after,
+    .sdet li:nth-child(3)::after,
+    .sdet li:nth-child(4)::after{
+        width: 100%;
+    }
+    
+    .sdet li:nth-child(2)::after{
+        bottom: -30px;
+    }
+
+    .sfoot > div{
+        width: 80%;
+    }
+
+    .soleft{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1181px) {
+    .sdet li:nth-child(1)::after, 
+    .sdet li:nth-child(2)::after,
+    .sdet li:nth-child(3)::after,
+    .sdet li:nth-child(4)::after{
+        position: absolute;
+        width: 100%;
+        opacity: 0.5;
+        line-height: 1;
+        left: 20px;
+        bottom: -35px;
+    }
+
+    .sdet li:nth-child(1)::after{
+        bottom: -40px;
+        width: 100%;
+    }
+
+    .sfoot > div{
+        width: 90%;
+    }
+
+    .social {
+        width: 96%;
+    }
+
+    .sustain{
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+        .social {
+            width: 96%;
+        }
+
+        .sustain{
+            width: 90%;
+        }
+
+        .left{
+            width: 100%;
+        }
+        .right{
+            display: none;
+        }
+
+
+    }
+    
+    @media screen and (max-width: 767px) {
+        .hamburger{
+            display: block;
+        }
+
+        .header ul{
+            display: none;
+        }
+        
+    }
+    
+    @media screen and (max-width: 479px) {
+    /* start of phone styles */
+    
+    }
