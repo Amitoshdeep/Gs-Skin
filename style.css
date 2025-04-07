@@ -1143,10 +1143,11 @@ i{
         .sfoot > div > div:nth-child(2):after,
         .sfoot > div > div:nth-child(3):after,
         .sfoot > div > div:nth-child(4):after{
-            top: 10px;
-            transform: none;
+            top: 50%;
             right: 0;
+            transform: translateY(-50%);
             height: fit-content;
+
         }
 
         .srect{
@@ -1157,5 +1158,37 @@ i{
         .srect::after{
             height: 120px;
             width: 120px;
+        }
+
+        .left ul li {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            width: 100%;
+            font-weight: 600;
+            line-height: 1;
+        }
+
+        .footer{
+            padding: 20px;
+        }
+
+        .services{
+            height: max-content;
+        }
+        
+        .header{
+            padding: 10px;
+        }
+    }
+
+
+    @media screen and (max-width:375px) {
+        .sdet li:nth-child(1)::after, 
+        .sdet li:nth-child(2)::after,
+        .sdet li:nth-child(3)::after,
+        .sdet li:nth-child(4)::after{
+            width: 100%;
+            bottom: -45px;
         }
     }
