@@ -1069,7 +1069,7 @@ i{
     /* start of phone styles */
         .hero-text{
             /* height: 200px; */
-            bottom: 0px;
+            bottom: 0px !important;
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
