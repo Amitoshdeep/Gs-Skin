@@ -311,7 +311,7 @@ i{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 60%;
+    height: max-content;
     background-color: rgba(243, 224, 190, 0.3);
 }
 
@@ -395,16 +395,20 @@ i{
 
 .right .rrect{
     display: inline-block; /* Allows proper column wrapping */
-    width: 100%;
+    /* width: 58%; */
     max-width: 250px;
     /* border: 2px solid black; */
     height: 100%;
+    aspect-ratio: 3/4;
+
     justify-self: end; /* Centers each grid item horizontally */
     align-self: center; /* Centers each grid item vertically */
     border-radius: 20px;
     background-position: center;
     background-size: cover;
 }
+
+
 
 
 
