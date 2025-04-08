@@ -1027,7 +1027,7 @@ i{
 
         .hero-text{
             /* height: 200px; */
-            bottom: 20px;
+            bottom:20px;
             left: 50%;
             transform: translateX(-50%);
             width: 350px;
@@ -1069,7 +1069,7 @@ i{
     /* start of phone styles */
         .hero-text{
             /* height: 200px; */
-            bottom: 0px !important;
+            bottom: 0px;
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
@@ -1143,10 +1143,9 @@ i{
         .sfoot > div > div:nth-child(3):after,
         .sfoot > div > div:nth-child(4):after{
             top: 50%;
-            right: 0;
+            right: 0px;
             transform: translateY(-50%);
             height: fit-content;
-
         }
 
         .srect{
