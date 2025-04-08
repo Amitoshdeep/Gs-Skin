@@ -930,7 +930,6 @@ i{
     .sustain{
         width: 80%;
     }
-
 }
 
 
@@ -1070,7 +1069,7 @@ i{
     /* start of phone styles */
         .hero-text{
             /* height: 200px; */
-            bottom: 20px;
+            bottom: 0px;
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
@@ -1181,7 +1180,6 @@ i{
             padding: 10px;
         }
     }
-
 
     @media screen and (max-width:375px) {
         .sdet li:nth-child(1)::after, 
